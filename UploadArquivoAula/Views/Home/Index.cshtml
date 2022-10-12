@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h3>Adicionar Arquivos: </h3>
+    
+</div>
+
+<br />  
+
+<form action="/Arquivos/UploadImagem" enctype="multipart/form-data" method="post">
+    <input type="file" name="arquivos" multiple />
+    <br />
+    <br />  
+    <button>Enviar Imagem</button>
+
+</form>
+<br />  
+<a asp-controller="Arquivos" asp-action="Index" type="button" class="btn btn-dark">Lista de Arquivos</a>
+
+<figure class="figure" style="width:400px; margin-left:200px">
+    <img src="https://silvrback.s3.amazonaws.com/uploads/fae5d2c9-6a2c-46cf-b018-3b906c93d8db/upload-jsf-inputFile_large.png" class="figure-img img-fluid rounded" alt="...">
+</figure>

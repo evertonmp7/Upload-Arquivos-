@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "_Layout_Deslogado";
+}
+
+<div style="margin-top:50px">
+    <h3>Alterar Senha: </h3>
+
+    <form method="post" asp-controller="Login" asp-action="Alterar">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email Cadastrado" required>
+           
+
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputEmail1" name="senha" placeholder="Digite uma nova senha " required>
+          
+        </div>
+
+        <button type="submit" class="btn btn-primary">Alterar</button>
+        <a asp-controller="Login" asp-action="Index" class="btn btn-dark">Voltar</a>
+    </form>
+
+</div>
+

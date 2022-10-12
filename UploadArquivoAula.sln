@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UploadArquivoAula", "UploadArquivoAula\UploadArquivoAula.csproj", "{997003F2-93B2-48CB-A191-7D3FD23362E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UploadArquivoCamada.Data", "UploadArquivoCamada.Data", "{B4A869BF-41FB-47E2-975E-08FF3976C05D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UploadArquivoCamada.Model", "UploadArquivoCamada.Model", "{B95EA45E-3FCC-4344-B897-4ADCD2E4917F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UploadArquivoCamada.Web", "UploadArquivoCamada.Web", "{CA8E9532-EC57-4A66-8AAF-24702B568B5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquivoUpload.Data", "ArquivoUpload\ArquivoUpload.Data.csproj", "{06E6F4FB-55D9-4F31-AE14-DB9BA4876E23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquivosUpload.Model", "ArquivosUpload\ArquivosUpload.Model.csproj", "{63947FA9-E916-4A0E-840D-3F7BEB3CE819}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{997003F2-93B2-48CB-A191-7D3FD23362E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997003F2-93B2-48CB-A191-7D3FD23362E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997003F2-93B2-48CB-A191-7D3FD23362E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997003F2-93B2-48CB-A191-7D3FD23362E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E6F4FB-55D9-4F31-AE14-DB9BA4876E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E6F4FB-55D9-4F31-AE14-DB9BA4876E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E6F4FB-55D9-4F31-AE14-DB9BA4876E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E6F4FB-55D9-4F31-AE14-DB9BA4876E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63947FA9-E916-4A0E-840D-3F7BEB3CE819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63947FA9-E916-4A0E-840D-3F7BEB3CE819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63947FA9-E916-4A0E-840D-3F7BEB3CE819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63947FA9-E916-4A0E-840D-3F7BEB3CE819}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{997003F2-93B2-48CB-A191-7D3FD23362E5} = {CA8E9532-EC57-4A66-8AAF-24702B568B5F}
+		{06E6F4FB-55D9-4F31-AE14-DB9BA4876E23} = {B4A869BF-41FB-47E2-975E-08FF3976C05D}
+		{63947FA9-E916-4A0E-840D-3F7BEB3CE819} = {B95EA45E-3FCC-4344-B897-4ADCD2E4917F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B3DFCD7-DA28-4738-94A4-E7605DA66C54}
+	EndGlobalSection
+EndGlobal
