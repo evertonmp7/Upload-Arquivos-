@@ -23,6 +23,16 @@
         <button type="submit" class="btn btn-primary">Cadastrar</button>
         <a asp-controller="Login" asp-action="Index" class="btn btn-dark">Voltar</a>
     </form>
+    <br />
+
+    @if (TempData["Cadastro"] != null)
+    {
+        <div class="alert alert-primary" role="alert">
+            @TempData["Cadastro"]
+        </div>
+    }
+
+
 
 </div>
 

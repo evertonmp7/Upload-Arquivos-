@@ -1,9 +1,9 @@
 ﻿@{
     Layout = "_Layout_Deslogado";
- }
+}
 
+<div style="margin-top:50px" >
 
-<div style="margin-top:50px">
     <h3>Login</h3>
 
     <form method="post" asp-controller="Login" asp-action="Index">
@@ -23,7 +23,19 @@
         <a asp-controller="Login" asp-action="Cadastro" class="btn btn-dark">Cadastrar</a>
         <a asp-controller="Login" asp-action="Alterar" class="btn btn-light">Esqueci minha senha</a>
     </form>
+    <br />
+
+    @if (TempData["Mensagem"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["Mensagem"]
+        </div>
+    }
 
 
 </div>
+
+
+
+
 

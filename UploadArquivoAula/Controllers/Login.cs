@@ -40,6 +40,7 @@ namespace UploadArquivoAula.Controllers
                         return Redirect("Home/Index");
                     }
                 }
+                TempData["Mensagem"] = "Dados Incorretos. Tente Novamente";
                 return Redirect("Login/Index");
             }
             else
@@ -66,7 +67,9 @@ namespace UploadArquivoAula.Controllers
                 SqlCommand cmdComandoInsert = new SqlCommand(strQueryInsert, minhaConexao);
                 cmdComandoInsert.ExecuteNonQuery();
 
-                return Redirect("../Login/Index");
+                TempData["Cadastro"] = "Cadastro realizado com sucesso!";
+                return Redirect("../Login/Cadastro");
+                
             }
             else
             {
@@ -91,9 +94,11 @@ namespace UploadArquivoAula.Controllers
                 SqlCommand cmdComandoUpdate = new SqlCommand(strQueryUpdate, minhaConexao);
                 cmdComandoUpdate.ExecuteNonQuery();
 
-                return Redirect("../Login/Index");
+                TempData["Alterar"] = "Senha alterada com sucesso!";
+                return Redirect("../Login/Alterar");
 
             }
+            
             return Redirect("../Login/Index");
 
         }
